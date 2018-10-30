@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-moduscreate-plugins-immap" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>IMMapPlugin</name>
+    <js-module name="IMMapPlugin" src="www/IMMapPlugin.js">
+        <clobbers target="immap" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="IMMapPlugin">
+                <param name="ios-package" value="IMMapPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/IMMapPlugin.swift"/>
+        <pods-config ios-min-version="8.0" use-frameworks="true" />
+        <pod name="IMMap" />
+    </platform>
+</plugin>
