@@ -1,0 +1,25 @@
+{
+  "name": "com-whereplace-plugins-immap",
+  "version": "1.0.1",
+  "description": "Plugin for IMMap framework",
+  "cordova": {
+    "id": "com-moduscreate-plugins-immap",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vit1812/IMMapPlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "VinhLT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vit1812/IMMapPlugin/issues"
+  },
+  "homepage": "https://github.com/vit1812/IMMapPlugin#readme"
+}
