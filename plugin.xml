@@ -11,8 +11,8 @@
             </feature>
         </config-file>
         <source-file src="src/ios/IMMapPlugin.swift"/>
-        <framework src="IMMap" type="podspec" spec="~> 1.0" />
-<!--        <pods-config ios-min-version="8.0" use-frameworks="true" />-->
-<!--        <pod name="IMMap" />-->
+<!--        <framework src="IMMap" type="podspec" spec="~> 1.0" />-->
+        <pods-config ios-min-version="8.0" use-frameworks="true" />
+        <pod name="IMMap" />
     </platform>
 </plugin>
