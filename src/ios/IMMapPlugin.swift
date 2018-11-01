@@ -16,6 +16,8 @@ import IMMap
         guard let vc = w.rootViewController else {return}
         guard let mapVc = MapViewController.mapViewController() else {return}
         mapVc.delegate = self
+        mapVC.view.frame = vc.view.frame
+        mapVC.checkToOpenAirportList()
         vc.present(mapVc, animated: true) {
             
         }
