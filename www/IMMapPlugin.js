@@ -1,9 +1,13 @@
 var exec = require('cordova/exec');
 
-//exports.coolMethod = function (arg0, success, error) {
-//    exec(success, error, 'IMMapPlugin', 'coolMethod', [arg0]);
-//};
+exports.openMap = function () {
+    exec(function(msg) {}, function(err) {}, "IMMapPlugin", "openMap", []);
+};
 
-exports.openMap = function (arg0, success, error) {
-    exec(success, error, "IMMapPlugin", "openMap", [arg0]);
+exports.openMapWithAirportCode = function (arg0) {
+    exec(function(msg) {}, function(err) {}, "IMMapPlugin", "openMapWithAirportCode", [arg0]);
+};
+
+exports.setCurrentLanguageCode = function (arg0) {
+    exec(function(msg) {}, function(err) {}, "IMMapPlugin", "setCurrentLanguageCode", [arg0]);
 };

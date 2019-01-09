@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com-whereplace-plugins-immap" version="1.0.8" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com-whereplace-plugins-immap" version="1.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>IMMapPlugin</name>
     <js-module name="IMMapPlugin" src="www/IMMapPlugin.js">
         <clobbers target="immap" />
@@ -11,8 +11,19 @@
             </feature>
         </config-file>
         <source-file src="src/ios/IMMapPlugin.swift"/>
-<!--        <framework src="IMMap" type="podspec" spec="~> 1.0" />-->
+        <preference name="LOCATION_WHEN_IN_USE_DESCRIPTION" default="Your current location will be displayed on the map and used for directions, show nearby venues."/>
+        <preference name="LOCATION_USAGE_DESCRIPTION" default="Your current location will be displayed on the map and used for directions, show nearby venues."/>
+        <preference name="LOCATION_ALWAYS_USAGE_DESCRIPTION" default="Your current location will be displayed on the map and used for directions, show nearby venues."/>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>$LOCATION_WHEN_IN_USE_DESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>$LOCATION_ALWAYS_USAGE_DESCRIPTION</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationUsageDescription">
+            <string>$LOCATION_USAGE_DESCRIPTION</string>
+        </config-file>
         <pods-config ios-min-version="8.0" use-frameworks="true" />
-        <pod name="IMMap" />
+        <pod name="IMMap2" />
     </platform>
 </plugin>

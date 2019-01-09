@@ -1,6 +1,6 @@
 {
   "name": "com-whereplace-plugins-immap",
-  "version": "1.0.8",
+  "version": "1.2.1",
   "description": "Plugin for IMMap framework",
   "cordova": {
     "id": "com-moduscreate-plugins-immap",
